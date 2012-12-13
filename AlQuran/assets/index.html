@@ -1,0 +1,225 @@
+<!--
+ ! Excerpted from "Hello, Android! 3e",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/eband3 for more book information.
+-->
+<html>
+<head>
+
+<title>Easy Slider jQuery Plugin Demo</title>
+
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />    
+
+	<script type="text/javascript" src="file:///android_asset/js/jquery.js"></script>
+
+	<script type="text/javascript" src="file:///android_asset/js/easySlider1.5.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){	
+
+			$("#slider").easySlider({
+
+				controlsBefore:	'<p id="controls">',
+
+				controlsAfter:	'</p>',
+
+				auto: true, 
+
+				continuous: true
+
+			});
+
+			$("#slider2").easySlider({
+
+				controlsBefore:	'<p id="controls2">',
+
+				controlsAfter:	'</p>',		
+
+				prevId: 'prevBtn2',
+
+				nextId: 'nextBtn2'	
+
+			});			
+
+		});	
+
+	</script>
+
+
+
+<script language="JavaScript">
+   function callJS(arg) { 
+      document.getElementById('replaceme').innerHTML = arg;
+   }
+</script>
+
+
+<style type="text/css">
+
+	#slider{}	
+
+	#slider ul, #slider li, #slider2 ul, #slider2 li{
+
+		margin:0;
+
+		padding:0;
+
+		list-style:none;
+
+		}
+
+	#slider li, #slider2 li{ 
+
+		/* 
+
+			define width and height of list item (slide)
+
+			entire slider area will adjust according to the parameters provided here
+
+		*/ 
+
+		width:350px;
+
+		height:470px;
+
+		overflow:hidden; 
+
+		}	
+
+
+
+	#slider2 li{ 
+
+		background:#f1f1f1;
+
+		}		
+
+	#slider2 li h2{ 
+
+		margin:0 20px;
+
+		padding-top:20px;
+
+		}	
+
+	#slider2 li p{ 
+
+		margin:20px;
+
+		}						
+
+		
+
+	p#controls, p#controls2{
+
+		margin:0;
+
+		position:relative;
+
+		} 
+
+	
+
+	#prevBtn, #nextBtn, #prevBtn2, #nextBtn2{ 
+
+		display:block;
+
+		margin:0;
+
+		overflow:hidden;
+
+		text-indent:-8000px;		
+
+		width:30px;
+
+		height:77px;
+
+		position:absolute;
+
+		left:-30px;
+
+		top:-160px;
+
+		}	
+
+	#nextBtn, #nextBtn2{ 
+
+		left:355px;
+
+		}														
+
+	#prevBtn a, #nextBtn a, #prevBtn2 a, #nextBtn2 a{  
+
+		display:block;
+
+		width:30px;
+
+		height:77px;
+
+		background:url(images/btn_prev.gif) no-repeat 0 0;	
+
+		}	
+
+	#nextBtn a, #nextBtn2 a{ 
+
+		background:url(images/btn_next.gif) no-repeat 0 0;	
+
+		}												
+
+
+
+/* // Easy Slider */
+
+
+
+</style>	
+
+</head>
+<body>
+<div id="container">
+
+
+
+	<div id="header">
+
+	</div>
+
+
+
+	<div id="content">
+
+	
+
+		<div id="slider2">
+
+			<ul>				
+
+				<li><img src="images/p003.gif" width= "360" height = "480" alt="Css Template Preview" /></a></li>
+
+				<li><img src="images/p004.gif" width= "360" height = "480" alt="Css Template Preview" /></a></li>
+
+				<li><img src="images/p005.gif" width= "360" height = "480" alt="Css Template Preview" /></a></li>
+
+				<li><img src="images/p006.gif" width= "360" height = "480" alt="Css Template Preview" /></a></li>
+
+				<li><img src="images/p007.gif" width= "360" height = "480" alt="Css Template Preview" /></a></li>
+				
+				<li><img src="images/p008.gif" width= "360" height = "480" alt="Css Template Preview" /></a></li>
+				
+				<li><img src="images/p009.gif" width= "360" height = "480" alt="Css Template Preview" /></a></li>
+				
+				<li><img src="images/p0010.gif" width= "360" height = "480" alt="Css Template Preview" /></a></li>			
+
+			</ul>
+
+		</div>
+
+
+<p>
+
+</body>
+</html>

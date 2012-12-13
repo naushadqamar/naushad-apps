@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/Zoom" android:title="ZoomEnabled">
+    </item>
+    <item android:id="@+id/ZoomDisabled" android:title="ZoomDisabled"></item>
+    
+</menu>
